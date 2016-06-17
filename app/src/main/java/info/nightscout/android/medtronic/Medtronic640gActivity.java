@@ -98,7 +98,7 @@ public class Medtronic640gActivity extends Activity implements OnSharedPreferenc
             Fabric.with(this, new Crashlytics());
         }
         if (prefs.getBoolean(getString(R.string.preferences_enable_answers), true)) {
-            Fabric.with(this, new Answers());
+            Fabric.with(this, new Answers(), new Crashlytics());
         }
 
         keepServiceAlive = Eula.show(this, prefs);

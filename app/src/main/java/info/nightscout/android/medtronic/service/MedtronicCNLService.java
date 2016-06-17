@@ -170,6 +170,7 @@ public class MedtronicCNLService extends AbstractService {
                         cnlReader.beginEHSMSession();
 
                         cnlReader.getPumpTime(pumpRecord);
+                        cgmRecord.setDisplayTime(pumpRecord.displayTime);
                         cnlReader.getPumpStatus(cgmRecord);
 
                         long pumpToUploaderTimeOffset = (new java.util.Date()).getTime() - Medtronic640gActivity.pumpStatusRecord.pumpDate.getTime();

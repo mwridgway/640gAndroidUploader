@@ -59,6 +59,9 @@
             android:name=".medtronic.GetHmacAndKeyActivity"
             android:label="@string/title_activity_login" >
         </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="bfd553702aabd2ca94f47da0c45f0302259e4fe6" />
     </application>
 
 </manifest>
